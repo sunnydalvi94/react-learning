@@ -17,8 +17,7 @@ button:hover {
   color: white;
 }
 .filter-btns{
-  display: flex
-;
+  display: flex;
     justify-content: space-between;
     padding: 10px 0px;
 }
