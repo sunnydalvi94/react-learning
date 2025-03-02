@@ -1,11 +1,18 @@
 import React from "react";
-import Usestatehook from "./Usestatehook";
+
+import useLocalStorage from "./useLocalStorage";
+import "./App.css";
 
 export function App() {
+  const [name, setName] = useLocalStorage("name", "dark");
+  const toggleTheme = () => {
+    setName(name === "light" ? "dark" : "light");
+  };
   return (
-    <div>
+    <div className={name}>
       <h1>All Examples</h1>
-      <Usestatehook />
+      <h1>Hello, {name}!</h1>
+      <button onClick={toggleTheme}>Toggle Theme</button>
     </div>
   );
 }

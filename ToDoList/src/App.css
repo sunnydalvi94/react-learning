@@ -1,0 +1,61 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body{
+  background-color:rgba(255, 255, 255, 0.985);
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.filterbtn {
+  gap: 10px;
+  display: flex;
+  margin-top: 20px;
+}
+button,
+button {
+  background-color: gray;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+button:hover {
+  border: 1px solid gray;
+  color: black;
+  background-color: white;
+}
+.tasklist{
+  border: 1px solid gray;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.tasklist ul {
+  text-align: left;
+  list-style-type: none;
+  padding-left: 0px;
+}
+.tasklist ul li {
+  background-color:  rgb(208, 204, 204);
+  margin: 10px 0px;
+  padding: 5px 10px;
+  color: rgb(86, 82, 82);
+  
+}
+.tasklist ul li:hover {
+  background-color: rgb(228, 225, 225);
+  color: black;
+}
