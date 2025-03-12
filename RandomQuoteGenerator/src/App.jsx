@@ -12,20 +12,18 @@ function App() {
     try {
       const response = await fetch("https://dummyjson.com/quotes");
       const data = await response.json();
-      const randIndex= Math.floor(Math.random() * data.quotes.length);
+      const randIndex = Math.floor(Math.random() * data.quotes.length);
       const result = data.quotes[randIndex];
       setQuote({ text: result.quote, author: result.author });
-      
     } catch (error) {
       console.error("error is: ", error);
     }
   };
-  useEffect(()=>{
-    quoteGenerate()
-  },[])
+  useEffect(() => {
+    quoteGenerate();
+  }, []);
   return (
     <>
-       
       <QuoteBox quote={quote.text} author={quote.author} />
       <QuoteButton quoteGenerate={quoteGenerate} />
     </>
