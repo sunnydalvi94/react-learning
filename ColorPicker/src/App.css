@@ -1,0 +1,13 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+input[type ='color']{
+  width: 200px;
+  height: 50px;
+  border: 1px solid gray;
+}
