@@ -16,30 +16,29 @@ function TaskItem({ task }) {
   }
   return (
     <>
-      <div
+      <div className="item-row"
         style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
+         
         }}
       >
         <li
+          hidden={editFlag}
           style={{ textDecoration: task.completed ? "line-through" : "none" }}
           onClick={() => onToggleComplete(task.id)}
         >
-          <span hidden={editFlag}>{task.text}</span>
-          <input
-            value={editText}
-            onChange={(e) => setEditText(e.target.value)}
-            type="text"
-            hidden={!editFlag}
-          />
+          <span>{task.text}</span>
         </li>
+        <input
+          value={editText}
+          onChange={(e) => setEditText(e.target.value)}
+          type="text"
+          hidden={!editFlag}
+        />
         <div style={{ display: "flex" }}>
-          <button onClick={() => editTask(task.id)}>
+          <button onClick={() => editTask(task.id)} className="editBtn">
             {!editFlag ? "Edit" : "Update"}
           </button>
-          <button onClick={() => deleteTask(task.id)}>Delete</button>
+          <button onClick={() => deleteTask(task.id)} className="deleteBtn">Delete</button>
         </div>
       </div>
     </>

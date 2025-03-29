@@ -1,3 +1,4 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,30 +6,29 @@
   text-align: center;
 }
 .weather-main{
-  background-color:rgb(34, 87, 104);
   border-radius: 20px;
   padding: 20px;
-  width: 400px;
-  margin: 0px auto;
+  width: 500px;
   color: white;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  
+ 
 }
-
-.info-section-two{
+.app{
+  transform: scale(1.4);
+}
+.forcast{
   display: flex;
   justify-content: space-between;
 }
-.search-box{
-  display:flex;
-  justify-content: center;
-  align-items: center;
+.info-section-two p{
+ font-size: 12px;
 }
-input[type='text']{
-  height: 20px;
-  /* border-radius: 5px; */
+
+input[type='text']:focus-visible{
+  border: 2px solid transparent;
+  outline: none;
 }
-h1{margin: 20px 0px 0px 0px;}
-h3{margin: 0px;}
+h1{margin: 0px 0px 0px 0px;font-size: 40px;font-weight: 600;}
+h3{margin: 0px;font-size: 25px;}

@@ -5,14 +5,13 @@ import FilterTask from "./components/FilterTask";
 import TaskList from "./components/TaskList";
 
 function App() {
-
   return (
     <>
       <div className="app">
-      <h2>ToDo List</h2>
-        <AddTask/>
-        <FilterTask/>
-        <TaskList/>
+        <h2>ToDo App</h2>
+        <AddTask />
+        <FilterTask />
+        <TaskList />
       </div>
     </>
   );

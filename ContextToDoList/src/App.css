@@ -3,8 +3,103 @@
   margin: 0 auto;
   text-align: center;
 }
-button{padding: 10px 10px;margin: 10px;}
-ul{
-width: 500px;
-margin: 0px auto;
+button {
+  padding: 6px 10px;
+  margin: 10px;
+  font-size: 13px;
+}
+ul {
+  width: 500px;
+  margin: 0px auto;
+}
+.app {
+  box-shadow: 0px 3px 10px #b19188;
+  max-width: 500px;
+  margin: 0px auto;
+  border-radius: 20px;
+  padding: 20px;
+  background: #252525;
+}
+h2 {
+  border-bottom: 1px solid #8f87875c;
+  padding: 0px 0px 20px 0px;
+  font-size: 40px;
+  margin-top: 0px;
+  color: white;
+}
+.item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+.item-row span {
+  color: white;
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+form input[type="text"] {
+  width: 100%;
+}
+form button {
+  margin: 0px;
+  border-radius: 0px;
+  background: gray;
+  padding: 6px 10px;
+  color: white;
+}
+form button:hover {
+  background-color: rgb(85, 81, 81);
+  border: 1px solid rgb(85, 81, 81);
+}
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.editBtn {
+  background-color: #198754;
+  color: white;
+}
+.editBtn:hover {
+  background-color: #8cbca6;
+  border: 1px solid #113e29;
+}
+.deleteBtn {
+  background-color: #7f3232;
+  color: white;
+}
+.deleteBtn:hover {
+  background-color: #ab7676;
+  border: 1px solid #2c1212;
+}
+
+.filterbtn {
+  font-size: 11px;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.filterbtn button {
+  background-color: rgb(238, 206, 148);
+  margin: 0px;
+  border-radius: 0px;
+  color: black;
+  border: 1px solid gray;
+  width: 120px;
+  padding: 4px 30px;
+  text-align: center;
+}
+.filterbtn button:hover {
+  background-color: rgb(241, 186, 84);
+}
+:focus-visible {
+  outline: none;
 }
